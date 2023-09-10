@@ -1,0 +1,67 @@
+@import './mapacolors.less';
+body{
+    background-color: #colors[corpoColors];
+    font-family: @fontePrincipal;
+    color: #colors[textColors];
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: @fonteDoTitulo;
+    font-size: 3em;
+}
+
+main {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 8px;
+    border-radius: 8px;
+    background-color: #colors[buttonColors];
+    color: #colors[buttonTextColors];
+    font-family: @fontePrincipal;
+}
+
+input {
+    display: block;
+    margin: 8px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    background-color: transparent;
+    text-align: center;
+    color:#colors[textColors];
+    border-bottom: 6px solid #colors[textColors];
+}
+
+.resultado {
+    padding: 5px;
+    margin-top: 60px;
+    border: 8px dotted #colors[textColors];
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 1.5em;
+        display: block;
+    }
+}
+
+footer {
+    padding-top: 20px;
+    h6 {
+        font-family: @fontePrincipal;
+    }
+}
